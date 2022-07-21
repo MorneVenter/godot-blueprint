@@ -15,17 +15,28 @@ boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
 boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
+[debug]
+
+gdscript/warnings/treat_warnings_as_errors=true
+gdscript/warnings/unused_class_variable=true
+gdscript/warnings/unsafe_property_access=true
+gdscript/warnings/unsafe_method_access=true
+gdscript/warnings/unsafe_cast=true
+gdscript/warnings/unsafe_call_argument=true
+
 [display]
 
-window/size/width=1920
-window/size/height=1080
-window/size/resizable=false
-window/size/fullscreen=true
+window/size/width=1280
+window/size/height=720
 window/stretch/aspect="keep"
 
 [editor]
 
 script_templates_search_path="res://.script_templates"
+
+[editor_plugins]
+
+enabled=PoolStringArray( "res://addons/godot_xterm/plugin.cfg" )
 
 [physics]
 
