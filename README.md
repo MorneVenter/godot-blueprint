@@ -17,7 +17,7 @@
 
 | Name   | Version |                        Link                        |
 | :----- | :------ | :------------------------------------------------: |
-| Godot  | 3.4.4   |    [Download](https://godotengine.org/download)    |
+| Godot  | 3.5     |    [Download](https://godotengine.org/download)    |
 | VSCode | 1.68+   | [Download](https://code.visualstudio.com/download) |
 
 ### Reading
