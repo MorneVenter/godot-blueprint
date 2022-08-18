@@ -6,29 +6,31 @@
 ;   [section] ; section goes between []
 ;   param=value ; assign values to parameters
 
-config_version=4
+config_version=5
 
 [application]
 
 config/name="GodotBlueprint"
+config/features=PackedStringArray("4.0")
 boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
-boot_splash/bg_color=Color( 0, 0, 0, 1 )
+boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.png"
 
 [debug]
 
 gdscript/warnings/treat_warnings_as_errors=true
-gdscript/warnings/unused_class_variable=true
 gdscript/warnings/unsafe_property_access=true
 gdscript/warnings/unsafe_method_access=true
 gdscript/warnings/unsafe_cast=true
 gdscript/warnings/unsafe_call_argument=true
+gdscript/warnings/unused_class_variable=true
 
 [display]
 
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 window/size/width=1280
 window/size/height=720
-window/stretch/aspect="keep"
 
 [editor]
 
@@ -36,7 +38,7 @@ script_templates_search_path="res://.script_templates"
 
 [editor_plugins]
 
-enabled=PoolStringArray( "res://addons/godot_xterm/plugin.cfg" )
+enabled=PackedStringArray()
 
 [physics]
 

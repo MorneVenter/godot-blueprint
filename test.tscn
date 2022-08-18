@@ -1,0 +1,58 @@
+[gd_scene load_steps=6 format=3 uid="uid://b61dncip5qbjp"]
+
+[ext_resource type="Script" path="res://test.gd" id="1_8lujy"]
+[ext_resource type="Environment" uid="uid://yi13voxyos3a" path="res://default_env.tres" id="2_gn1hm"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_01e7b"]
+
+[sub_resource type="Animation" id="Animation_85dsk"]
+resource_name = "default"
+length = 5.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("MeshInstance3D:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 4.9),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 6.28319, 6.28319)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uhitf"]
+_data = {
+"default": SubResource("Animation_85dsk")
+}
+
+[node name="test" type="Node3D"]
+script = ExtResource("1_8lujy")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.727091, 0)
+mesh = SubResource("BoxMesh_01e7b")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0237904, 0.609057, 5.27208)
+
+[node name="SpotLight3D" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2.25164)
+light_color = Color(0.937255, 0, 0.345098, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.829642, 0.558295, 0, -0.558295, 0.829642, 0, 2.24906, 1.6724)
+light_color = Color(0.054902, 0.286275, 0.937255, 1)
+light_energy = 2.0
+light_indirect_energy = 2.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = ExtResource("2_gn1hm")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_uhitf")
+}

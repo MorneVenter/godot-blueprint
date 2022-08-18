@@ -17,7 +17,7 @@
 
 | Name   | Version |                        Link                        |
 | :----- | :------ | :------------------------------------------------: |
-| Godot  | 3.5     |    [Download](https://godotengine.org/download)    |
+| Godot  | 4.0     |    [Download](https://godotengine.org/download)    |
 | VSCode | 1.68+   | [Download](https://code.visualstudio.com/download) |
 
 ### Reading
@@ -33,44 +33,44 @@
 ```
 |-- Addons
 |-- Assets
-      |-- Animations
-      |-- Editor
-      |-- Media
-      |   |-- Audio
-      |   |-- Video
-      |-- Sprites
-      |-- Models
-      |-- Materials
-      |-- Shaders
-      |   |-- Canvas
-      |   |-- Spatial
-      |   |-- Particle
-      |-- Plugins
-      |-- Fonts
-      |   |-- Font Resources
-      |   |-- Raw Fonts
-      |-- Scenes
-      |   |-- Levels
-      |   |-- Characters
-      |   |-- Weapons
-      |   |-- Other
-      |-- Scripts
-      |   |-- Editor
-      |   |-- DataObjects
-      |   |-- Managers
-      |   |-- Utilities
-      |   |-- Resources
-      |   |-- Other
+	  |-- Animations
+	  |-- Editor
+	  |-- Media
+	  |   |-- Audio
+	  |   |-- Video
+	  |-- Sprites
+	  |-- Models
+	  |-- Materials
+	  |-- Shaders
+	  |   |-- Canvas
+	  |   |-- Spatial
+	  |   |-- Particle
+	  |-- Plugins
+	  |-- Fonts
+	  |   |-- Font Resources
+	  |   |-- Raw Fonts
+	  |-- Scenes
+	  |   |-- Levels
+	  |   |-- Characters
+	  |   |-- Weapons
+	  |   |-- Other
+	  |-- Scripts
+	  |   |-- Editor
+	  |   |-- DataObjects
+	  |   |-- Managers
+	  |   |-- Utilities
+	  |   |-- Resources
+	  |   |-- Other
 |-- ExternalAssets
-      |-- Media
-      |   |-- Audio
-      |   |-- Video
-      |-- Sprites
-      |-- Models
-      |-- Materials
-      |-- Shaders
-      |-- Fonts
-      |-- Scripts
+	  |-- Media
+	  |   |-- Audio
+	  |   |-- Video
+	  |-- Sprites
+	  |-- Models
+	  |-- Materials
+	  |-- Shaders
+	  |-- Fonts
+	  |-- Scripts
 ```
 
 | Folder              | Description                                                                                                            |
