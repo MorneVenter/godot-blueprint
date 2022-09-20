@@ -9,3 +9,6 @@ data_*/
 
 # Mac
 .DS_Store
+
+# Godot 4+ specific ignores
+.godot/
