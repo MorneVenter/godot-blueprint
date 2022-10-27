@@ -33,7 +33,6 @@
 ```
 |-- Addons
 |-- Assets
-	  |-- Animations
 	  |-- Editor
 	  |-- Media
 	  |   |-- Audio
@@ -45,14 +44,10 @@
 	  |   |-- Canvas
 	  |   |-- Spatial
 	  |   |-- Particle
-	  |-- Plugins
 	  |-- Fonts
-	  |   |-- Font Resources
-	  |   |-- Raw Fonts
 	  |-- Scenes
 	  |   |-- Levels
 	  |   |-- Characters
-	  |   |-- Weapons
 	  |   |-- Other
 	  |-- Scripts
 	  |   |-- Editor
@@ -83,8 +78,7 @@
 | Models              | Store all 3D models here.                                                                                              |
 | Materials           | Store all materials here.                                                                                              |
 | Shaders             | Store all spatial, canvas or particle shaders here.                                                                    |
-| Plugins             | Store any plugins you use here.                                                                                        |
-| Fonts               | Store all raw fonts files and font resources here.                                                                     |
+| Fonts               | Store all font resources here.                                                                                         |
 | Scenes              | Store all scenes here.                                                                                                 |
 | Scripts             | Store all scripts here.                                                                                                |
 | Scripts/Editor      | For Editor specific scripts.                                                                                           |
