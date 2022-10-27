@@ -17,6 +17,12 @@ boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
 boot_splash/bg_color=Color(0, 0, 0, 1)
 config/icon="res://icon.png"
 
+[autoload]
+
+Events="*res://Assets/Scripts/Managers/Events.gd"
+Saves="*res://Assets/Scripts/Managers/Saves.gd"
+PrettyNumbers="*res://Assets/Scripts/Utilities/PrettyNumbers.gd"
+
 [debug]
 
 gdscript/warnings/treat_warnings_as_errors=true
@@ -41,6 +47,10 @@ script_templates_search_path="res://.script_templates"
 [editor_plugins]
 
 enabled=PackedStringArray()
+
+[filesystem]
+
+import/fbx/enabled=false
 
 [physics]
 
