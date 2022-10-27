@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="GodotBlueprint"
+run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0")
 boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
 boot_splash/bg_color=Color(0, 0, 0, 1)
@@ -29,6 +30,7 @@ gdscript/warnings/unused_class_variable=true
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/stretch/mode="canvas_items"
 window/size/width=1280
 window/size/height=720
 
