@@ -6,10 +6,10 @@ func Format(number_to_format: float) -> String:
 	if number < 999.0:
 		return str(number * modifier)
 	elif number >= 1000.0 and number < 1000000.0:
-		var formatted_number: String = str(snapped(number/1000.0, 0.1) * modifier)+'K'
+		var formatted_number: String = str(stepify(number/1000.0, 0.1) * modifier)+'K'
 		return formatted_number
 	elif number >= 1000000.0:
-		var formatted_number: String = str(snapped(number/1000000.0, 0.1) * modifier)+'M'
+		var formatted_number: String = str(stepify(number/1000000.0, 0.1) * modifier)+'M'
 		return formatted_number
 	else:
 		return str(number * modifier)
