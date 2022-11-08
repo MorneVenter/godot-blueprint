@@ -12,4 +12,4 @@ data_*/
 
 # Godot specific ignores
 .godot/
-.import
+*.import
