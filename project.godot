@@ -13,8 +13,8 @@ config_version=5
 config/name="GodotBlueprint"
 run/main_scene="res://main.tscn"
 config/features=PackedStringArray("4.0")
-boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
 boot_splash/bg_color=Color(0, 0, 0, 1)
+boot_splash/image="res://ExternalAssets/Sprites/Logos/godot_logo.png"
 config/icon="res://icon.png"
 
 [autoload]
@@ -42,6 +42,7 @@ window/size/height=720
 
 [editor]
 
+export/convert_text_resources_to_binary=true
 script_templates_search_path="res://.script_templates"
 
 [editor_plugins]
