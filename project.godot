@@ -42,7 +42,6 @@ window/size/height=720
 
 [editor]
 
-export/convert_text_resources_to_binary=true
 script_templates_search_path="res://.script_templates"
 
 [editor_plugins]
