@@ -1,14 +1,4 @@
-
-# Godot-specific ignores
-.import/
-export.cfg
-
-# Mono-specific ignores
-.mono/
-data_*/
-
-# Mac
-.DS_Store
-
 # Godot 4+ specific ignores
 .godot/
+.import/
+.DS_Store
