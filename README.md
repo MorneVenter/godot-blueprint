@@ -68,25 +68,22 @@
 	  |-- Scripts
 ```
 
-| Folder              | Description                                                                                                            |
-| :------------------ | :--------------------------------------------------------------------------------------------------------------------- |
-| Addons              | Store all addons/plugins in this folder.                                                                               |
-| Animations          | Store all animations here.                                                                                             |
-| Editor              | Store all editor specific files here.                                                                                  |
-| Media               | Store all audio and video files here.                                                                                  |
-| Sprites             | Store all 2D sprites here.                                                                                             |
-| Models              | Store all 3D models here.                                                                                              |
-| Materials           | Store all materials here.                                                                                              |
-| Shaders             | Store all spatial, canvas or particle shaders here.                                                                    |
-| Fonts               | Store all font resources here.                                                                                         |
-| Scenes              | Store all scenes here.                                                                                                 |
-| Scripts             | Store all scripts here.                                                                                                |
-| Scripts/Editor      | For Editor specific scripts.                                                                                           |
-| Scripts/DataObjects | For scripts meant to transport, store or transform data.                                                               |
-| Scripts/Managers    | For singleton scripts used in Auto Loading.                                                                            |
-| Scripts/Utilities   | For utilty scripts used across the project.                                                                            |
-| Scripts/Resources   | Instances of DataObjects or other Godot resources.                                                                     |
-| ExternalAssets      | This is a reflection of the Assets folder, but meant for external assets you want to keep seperate from your project . |
+| Folder            | Description                                                                                                            |
+| :---------------- | :--------------------------------------------------------------------------------------------------------------------- |
+| addons            | Store all addons/plugins in this folder.                                                                               |
+| media             | Store all audio and video files here.                                                                                  |
+| sprites           | Store all 2D sprites here.                                                                                             |
+| models            | Store all 3D models here.                                                                                              |
+| materials         | Store all materials here.                                                                                              |
+| shaders           | Store all spatial, canvas or particle shaders here.                                                                    |
+| fonts             | Store all font resources here.                                                                                         |
+| scenes            | Store all scenes here.                                                                                                 |
+| scripts           | Store all scripts here.                                                                                                |
+| scripts/editor    | For Editor specific scripts.                                                                                           |
+| scripts/managers  | For singleton scripts used in Auto Loading.                                                                            |
+| scripts/utilities | For utilty scripts used across the project.                                                                            |
+| scripts/resources | Instances of DataObjects or other Godot resources.                                                                     |
+| external-assets   | This is a reflection of the Assets folder, but meant for external assets you want to keep seperate from your project . |
 
 ---
 
@@ -105,11 +102,11 @@ See the [Godot Style Guide](https://docs.godotengine.org/en/stable/tutorials/scr
 | Functions                   | Use snake case. Private functions start with an underscore.                      | `func _private_func():`               |
 | Signals                     | Use snake case.                                                                  | `signal my_signal`                    |
 | Constants/Enums             | Use upper snake case.                                                            | `var MY_CONST`                        |
-| Folders                     | Use pascal case.                                                                 | FolderNameHere                        |
+| Folders                     | Use kebab case.                                                                  | folder-name-here                      |
 | Classes                     | Use pascal case.                                                                 | `class_name MyClass`                  |
 | Variable Declaration        | Always use `:` operator to create variables with a type.                         | `var my_variable: string = "my var"`  |
 | Function Declaration        | Always use `->` operator to specify function return type.                        | `func do_something(age: int) -> int:` |
-| Max Parameters              | A method should not have more than 6 parameters.                                 | -                                     |
+| Max Parameters              | A method should not have more than 5 parameters.                                 | -                                     |
 | No magic numbers or strings | Do not use magic variables, rather define them as constant in a single location. | -                                     |
 
 ---
