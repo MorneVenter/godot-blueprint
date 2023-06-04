@@ -25,11 +25,11 @@ PrettyNumbers="*res://Assets/Scripts/Utilities/PrettyNumbers.gd"
 
 [debug]
 
-gdscript/warnings/treat_warnings_as_errors=true
 gdscript/warnings/unsafe_property_access=true
 gdscript/warnings/unsafe_method_access=true
 gdscript/warnings/unsafe_cast=true
 gdscript/warnings/unsafe_call_argument=true
+gdscript/warnings/treat_warnings_as_errors=true
 gdscript/warnings/unused_class_variable=true
 
 [display]
@@ -42,6 +42,8 @@ window/size/height=720
 
 [editor]
 
+version_control/plugin_name="GitPlugin"
+version_control/autoload_on_startup=true
 script_templates_search_path="res://.script_templates"
 
 [editor_plugins]
