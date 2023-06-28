@@ -1,4 +1,4 @@
-# [Project Template]
+# [Project Template] - 0.0.1
 
 ## Software Kit
 
@@ -31,41 +31,41 @@
 ## Folder Structure
 
 ```
-|-- Addons
-|-- Assets
-	  |-- Editor
-	  |-- Media
-	  |   |-- Audio
-	  |   |-- Video
-	  |-- Sprites
-	  |-- Models
-	  |-- Materials
-	  |-- Shaders
-	  |   |-- Canvas
-	  |   |-- Spatial
-	  |   |-- Particle
-	  |-- Fonts
-	  |-- Scenes
-	  |   |-- Levels
-	  |   |-- Characters
-	  |   |-- Other
-	  |-- Scripts
-	  |   |-- Editor
-	  |   |-- DataObjects
-	  |   |-- Managers
-	  |   |-- Utilities
-	  |   |-- Resources
-	  |   |-- Other
-|-- ExternalAssets
-	  |-- Media
-	  |   |-- Audio
-	  |   |-- Video
-	  |-- Sprites
-	  |-- Models
-	  |-- Materials
-	  |-- Shaders
-	  |-- Fonts
-	  |-- Scripts
+|-- addons
+|-- assets
+	  |-- editor
+	  |-- media
+	  |   |-- audio
+	  |   |-- video
+	  |-- sprites
+	  |-- models
+	  |-- materials
+	  |-- shaders
+	  |   |-- canvas
+	  |   |-- spatial
+	  |   |-- particle
+	  |-- fonts
+	  |-- scenes
+	  |   |-- levels
+	  |   |-- characters
+	  |   |-- other
+	  |-- scripts
+	  |   |-- editor
+	  |   |-- entities
+	  |   |-- managers
+	  |   |-- utilities
+	  |   |-- resources
+	  |   |-- other
+|-- externalAssets
+	  |-- media
+	  |   |-- audio
+	  |   |-- video
+	  |-- sprites
+	  |-- models
+	  |-- materials
+	  |-- shaders
+	  |-- fonts
+	  |-- scripts
 ```
 
 | Folder            | Description                                                                                                            |
