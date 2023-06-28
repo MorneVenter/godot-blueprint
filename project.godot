@@ -19,9 +19,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-Events="*res://Assets/Scripts/Managers/Events.gd"
-Saves="*res://Assets/Scripts/Managers/Saves.gd"
-PrettyNumbers="*res://Assets/Scripts/Utilities/PrettyNumbers.gd"
+SaveManager="*res://assets/scripts/managers/save_manager.gd"
+EventManager="*res://assets/scripts/managers/event_manager.gd"
+PrettyNumbers="*res://assets/scripts/utilities/pretty_numbers.gd"
 
 [debug]
 
