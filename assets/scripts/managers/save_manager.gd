@@ -1,6 +1,6 @@
 extends Node
 
-var _key = 'save_encryption_key'
+var _key := 'save_encryption_key'
 var _save_id: int = 1
 var _default_values: Dictionary = {
 	_DATE_KEY: "-"
@@ -32,7 +32,7 @@ func _init_new_save_file(savepath: String) -> void:
 	save_game.store_var(_default_values)
 
 func _update_save_file() -> void:
-	var save_path = _USERFOLDER + _SAVEFOLDER.path_join(_SAVE_NAME_TEMPLATE % _save_id)
+	var save_path: String = _USERFOLDER + _SAVEFOLDER.path_join(_SAVE_NAME_TEMPLATE % _save_id)
 	if not FileAccess.file_exists(save_path):
 		_init_new_save_file(save_path)
 	var save_game: FileAccess = FileAccess.open_encrypted_with_pass(save_path, FileAccess.WRITE, _key)
@@ -44,7 +44,7 @@ func _unload() -> void:
 	_save_id = 1
 
 func _delete_save(id: int) -> void:
-	var save_path = _USERFOLDER + _SAVEFOLDER.path_join(_SAVE_NAME_TEMPLATE % id)
+	var save_path: String = _USERFOLDER + _SAVEFOLDER.path_join(_SAVE_NAME_TEMPLATE % id)
 	var directory := DirAccess.open(_USERFOLDER)
 	directory.remove(save_path)
 	_unload()
