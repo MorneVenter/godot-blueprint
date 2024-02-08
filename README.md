@@ -28,6 +28,20 @@
 
 ---
 
+## 3D and 2D Scenes 
+
+This template comes with 3 helper nodes to assist with managing a mix of 3D and 2D scenes (i.e. 3D world and 2D UI). This will allow you to implement a 1920x1080 UI, but render your 3D world at a lower resolution (or use FSR).
+
+- SceneHolder: The main viewport for your scenes. Scene2D/3D should be children of this node.
+- Scene3D: Holds Node3D objects. A Scene3D should always be places before a Scene2D to allow overlays.
+- Scene2D: Holds Node2D objects. A Scene2D should always be places after a Scene3D to allow overlays.
+
+```
+|-- SceneHolder 
+	  |-- Scene3D 
+	  |-- Scene2D 
+```
+
 ## Folder Structure
 
 ```
