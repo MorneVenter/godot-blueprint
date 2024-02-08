@@ -61,7 +61,7 @@ script_templates_search_path="res://.script_templates"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/godot-vim/plugin.cfg")
 
 [filesystem]
 
