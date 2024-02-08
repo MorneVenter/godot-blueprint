@@ -28,6 +28,10 @@
 
 ---
 
+## Vim Bindings 
+
+By default, this template comes with a plugin that enabled Vim motions for your script editing. If you do not like this, try it out for a time to see how nice they are. If you really cannot live with Vim motions then you can disable this plugin in Project Settings -> Plugins.
+
 ## 3D and 2D Scenes 
 
 This template comes with 3 helper nodes to assist with managing a mix of 3D and 2D scenes (i.e. 3D world and 2D UI). This will allow you to implement a 1920x1080 UI, but render your 3D world at a lower resolution (or use FSR).
