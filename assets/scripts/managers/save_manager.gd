@@ -14,7 +14,7 @@ const _SAVE_NAME_TEMPLATE: String = "save_%03d.save"
 const _DATE_KEY: String = "LAST_WRITE_DATE_TIME"
 
 
-func _init():
+func _init() -> void:
 	_load_data()
 
 func _load_data() -> void:
@@ -58,14 +58,14 @@ func load_save(slot: int) -> void:
 	_save_id = slot
 	_load_data()
 
-func save_value(my_key: String, value) -> void:
+func save_value(my_key: String, value: Variant) -> void:
 	_data[my_key] = value
 	_data[_DATE_KEY] = Time.get_datetime_string_from_system()
 	_update_save_file()
 
-func load_value(my_key: String):
+func load_value(my_key: String) -> Variant:
 	if _data.has(my_key):
-		var loaded_value = _data[my_key]
+		var loaded_value: Variant = _data[my_key]
 		if loaded_value == null:
 			return null
 		return loaded_value

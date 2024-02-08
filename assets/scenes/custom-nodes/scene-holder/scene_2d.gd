@@ -1,0 +1,2 @@
+extends SubViewport
+class_name Scene2D
