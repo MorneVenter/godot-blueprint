@@ -1,27 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://br5jasmepe5xh"]
+[gd_scene load_steps=3 format=3 uid="uid://br5jasmepe5xh"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_fucb6"]
-[ext_resource type="PackedScene" uid="uid://cswylp4fly076" path="res://assets/scenes/custom-nodes/scene-holder/scene_holder.tscn" id="2_b45p1"]
-[ext_resource type="PackedScene" uid="uid://nm5bdpg22l1h" path="res://assets/scenes/custom-nodes/scene-holder/scene_2d.tscn" id="3_f7n7v"]
-[ext_resource type="PackedScene" uid="uid://cabvcqnuggm0i" path="res://assets/scenes/custom-nodes/scene-holder/scene_3d.tscn" id="4_mw3yv"]
+[ext_resource type="PackedScene" uid="uid://b1wbtf3bu1owd" path="res://assets/scenes/custom-nodes/ui-holder/ui_holder.tscn" id="2_c52y5"]
 
-[node name="Main" type="Control"]
-layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
+[node name="Main" type="Node"]
 script = ExtResource("1_fucb6")
 
-[node name="SceneHolder" parent="." instance=ExtResource("2_b45p1")]
-layout_mode = 0
-anchors_preset = 0
-anchor_right = 0.0
-anchor_bottom = 0.0
-grow_horizontal = 1
-grow_vertical = 1
-
-[node name="Scene3D" parent="SceneHolder" instance=ExtResource("4_mw3yv")]
-
-[node name="Scene2D" parent="SceneHolder" instance=ExtResource("3_f7n7v")]
+[node name="UIHolder" parent="." instance=ExtResource("2_c52y5")]

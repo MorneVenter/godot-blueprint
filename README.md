@@ -28,62 +28,61 @@
 
 ---
 
-## Vim Bindings 
+## Utility Scripts
 
-By default, this template comes with a plugin that enabled Vim motions for your script editing. If you do not like this, try it out for a time to see how nice they are. If you really cannot live with Vim motions then you can disable this plugin in Project Settings -> Plugins.
+This project includes a few utility scripts. Feel free to delete them if they are not needed. These scripts are:
 
-## 3D and 2D Scenes 
+- PrettyNumbers - A static class used to format numbers.
+- SaveManager - A singleton save system.
+- EventManager- A singleton event system. You can then use this to emit and subscribe to global signals.
 
-This template comes with 3 helper nodes to assist with managing a mix of 3D and 2D scenes (i.e. 3D world and 2D UI). This will allow you to implement a 1920x1080 UI, but render your 3D world at a lower resolution (or use FSR).
+## UI Holder Pattern
 
-- SceneHolder: The main viewport for your scenes. Scene2D/3D should be children of this node.
-- Scene3D: Holds Node3D objects. A Scene3D should always be places before a Scene2D to allow overlays.
-- Scene2D: Holds Node2D objects. A Scene2D should always be places after a Scene3D to allow overlays.
+This project includes a top-level UI manager component: UIHolder. Simply add this component to the root of your scene tree and use the `EventManager.add_ui` and `EventManager.remove_ui` signals to add and remove Control nodes.
+Ensure only one UIHolder is present in your scene tree, otherwise things will start breaking. Note: removing a Control node frees it from the scene tree.
 
-```
-|-- SceneHolder 
-	  |-- Scene3D 
-	  |-- Scene2D 
-```
+When adding a Control node via the signal, a UI layer is required. This can be found and changed at `global_enums.gd`. Control nodes will be ordered according to this enum, with higher values in the front.
+
+Example: `EventManager.add_ui.emit(ui, Enums.UILayers.WORLD)`.
 
 ## Folder Structure
 
 ```
 |-- addons
 |-- assets
-	  |-- editor
-	  |-- media
-	  |   |-- audio
-	  |   |-- video
-	  |-- sprites
-	  |-- models
-	  |-- materials
-	  |-- shaders
-	  |   |-- canvas
-	  |   |-- spatial
-	  |   |-- particle
-	  |-- fonts
-	  |-- scenes
-	  |   |-- levels
-	  |   |-- characters
-	  |   |-- other
-	  |-- scripts
-	  |   |-- editor
-	  |   |-- entities
-	  |   |-- managers
-	  |   |-- utilities
-	  |   |-- resources
-	  |   |-- other
+   |-- editor
+   |-- media
+   |   |-- audio
+   |   |-- video
+   |-- sprites
+   |-- models
+   |-- materials
+   |-- shaders
+   |   |-- canvas
+   |   |-- spatial
+   |   |-- particle
+   |-- fonts
+   |-- scenes
+   |   |-- levels
+   |   |-- characters
+   |   |-- other
+   |-- scripts
+   |   |-- editor
+   |   |-- entities
+   |   |-- managers
+   |   |-- utilities
+   |   |-- resources
+   |   |-- other
 |-- externalAssets
-	  |-- media
-	  |   |-- audio
-	  |   |-- video
-	  |-- sprites
-	  |-- models
-	  |-- materials
-	  |-- shaders
-	  |-- fonts
-	  |-- scripts
+   |-- media
+   |   |-- audio
+   |   |-- video
+   |-- sprites
+   |-- models
+   |-- materials
+   |-- shaders
+   |-- fonts
+   |-- scripts
 ```
 
 | Folder            | Description                                                                                                            |
@@ -151,11 +150,11 @@ Commits should be in the following form: **type[optional scope]: description**. 
 |    `refactor`     | Code Refactoring         |  📦   | `patch` | A code change that neither fixes a bug nor adds a feature                                                   |
 |      `perf`       | Performance Improvements |  🚀   | `patch` | A code change that improves performance                                                                     |
 |       `fix`       | Bug Fixes                |  🐛   | `patch` | A bug Fix                                                                                                   |
-|      `chore`      | Chores                   |   ♻   | `patch` | Other changes that don't modify src or test files                                                           |
-|     `revert`      | Reverts                  |   🗑   | `patch` | Reverts a previous commit                                                                                   |
+|      `chore`      | Chores                   |  ♻   | `patch` | Other changes that don't modify src or test files                                                           |
+|     `revert`      | Reverts                  |  🗑   | `patch` | Reverts a previous commit                                                                                   |
 |      `docs`       | Documentation            |  📚   | `patch` | Documentation only changes                                                                                  |
 |      `style`      | Styles                   |  💎   |    -    | Changes that do not affect the meaning of the code (white-space, formatting, missing semi-colons, etc)      |
 |      `test`       | Tests                    |  🚨   |    -    | Adding missing tests or correcting existing tests                                                           |
-|      `build`      | Builds                   |   🛠   | `patch` | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         |
-|       `ci`        | Continuous Integrations  |   ⚙   |    -    | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) |
+|      `build`      | Builds                   |  🛠   | `patch` | Changes that affect the build system or external dependencies (example scopes: gulp, broccoli, npm)         |
+|       `ci`        | Continuous Integrations  |  ⚙   |    -    | Changes to our CI configuration files and scripts (example scopes: Travis, Circle, BrowserStack, SauceLabs) |
 | `BREAKING CHANGE` | Breaking Change          |  💔   | `major` | When a breaking change occurs on the commit. Rather use the "!" operator in conjunction with a type.        |
