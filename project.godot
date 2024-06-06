@@ -23,6 +23,7 @@ config/icon="res://icon.png"
 
 SaveManager="*res://assets/scripts/managers/save_manager.gd"
 EventManager="*res://assets/scripts/managers/event_manager.gd"
+UIHolder="*res://assets/scripts/managers/ui_holder.gd"
 
 [debug]
 

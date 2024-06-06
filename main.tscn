@@ -1,9 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://br5jasmepe5xh"]
+[gd_scene load_steps=2 format=3 uid="uid://br5jasmepe5xh"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_fucb6"]
-[ext_resource type="PackedScene" uid="uid://b1wbtf3bu1owd" path="res://assets/scenes/custom-nodes/ui-holder/ui_holder.tscn" id="2_c52y5"]
 
 [node name="Main" type="Node"]
 script = ExtResource("1_fucb6")
-
-[node name="UIHolder" parent="." instance=ExtResource("2_c52y5")]

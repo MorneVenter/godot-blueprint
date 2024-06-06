@@ -38,12 +38,12 @@ This project includes a few utility scripts. Feel free to delete them if they ar
 
 ## UI Holder Pattern
 
-This project includes a top-level UI manager component: UIHolder. Simply add this component to the root of your scene tree and use the `EventManager.add_ui` and `EventManager.remove_ui` signals to add and remove Control nodes.
-Ensure only one UIHolder is present in your scene tree, otherwise things will start breaking. Note: removing a Control node frees it from the scene tree.
+This project includes a top-level UI manager component: UIHolder. Simply use the `UIHolder.add` and `UIHolder.remove` to add and remove Control nodes.
+Note: removing a Control node frees it from the scene tree.
 
-When adding a Control node via the signal, a UI layer is required. This can be found and changed at `global_enums.gd`. Control nodes will be ordered according to this enum, with higher values in the front.
+When adding a Control node via the UIHolder, a UI layer is required. This can be found and changed at `global_enums.gd`. Control nodes will be ordered according to this enum, with higher values in the front.
 
-Example: `EventManager.add_ui.emit(ui, Enums.UILayers.WORLD)`.
+Example: `UIHolder.add(ui, Enums.UILayers.WORLD)`.
 
 ## Folder Structure
 

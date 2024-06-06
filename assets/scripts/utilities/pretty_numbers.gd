@@ -1,6 +1,7 @@
 extends Node
 class_name PrettyNumbers
 
+
 func Format(number_to_format: float) -> String:
 	var number: float = abs(number_to_format)
 	var modifier: float = 1.0 if number_to_format >= 0 else -1.0

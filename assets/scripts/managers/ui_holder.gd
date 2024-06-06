@@ -2,8 +2,7 @@ extends Control
 
 
 func _ready() -> void:
-	EventManager.add_ui.connect(add)
-	EventManager.remove_ui.connect(remove)
+	anchors_preset = PRESET_FULL_RECT
 
 
 func add(ui_item: Control, layer: Enums.UILayers) -> void:
