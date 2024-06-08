@@ -15,10 +15,9 @@
 
 ### Software
 
-| Name   | Version |                        Link                        |
-| :----- | :------ | :------------------------------------------------: |
-| Godot  | 4.2.2   |    [Download](https://godotengine.org/download)    |
-| VSCode | 1.68+   | [Download](https://code.visualstudio.com/download) |
+| Name  | Version |                     Link                     |
+| :---- | :------ | :------------------------------------------: |
+| Godot | 4.2.2   | [Download](https://godotengine.org/download) |
 
 ### Reading
 
