@@ -1,0 +1,12 @@
+{
+	"tab_size": 4,
+	"hard_tabs": true,
+	"file_scan_exclusions": [
+		"**/.git",
+		"**/.DS_Store",
+		"**.import",
+		"**/.godot",
+		"**/.import",
+		"addons/**"
+	]
+}

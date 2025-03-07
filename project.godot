@@ -11,9 +11,9 @@ config_version=5
 [application]
 
 config/name="GodotBlueprint"
-config/tags=PackedStringArray("4.3", "template")
+config/tags=PackedStringArray("4.4", "template")
 run/main_scene="res://main.tscn"
-config/features=PackedStringArray("4.3")
+config/features=PackedStringArray("4.4")
 run/max_fps=60
 boot_splash/bg_color=Color(0, 0, 0, 1)
 boot_splash/image="res://external-assets/sprites/logos/godot_logo.png"
