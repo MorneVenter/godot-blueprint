@@ -11,18 +11,6 @@ func _enter_tree() -> void:
 	_create_settings()
 
 
-func _exit_tree() -> void:
-	_remove_settings()
-
-
-func _remove_settings() -> void:
-	var has_setting := ProjectSettings.has_setting(ENCRYPTION_KEY_SETTING)
-	if not has_setting:
-		return
-	ProjectSettings.set(ENCRYPTION_KEY_SETTING, null)
-	ProjectSettings.save()
-
-
 func _create_settings() -> void:
 	var has_setting := ProjectSettings.has_setting(ENCRYPTION_KEY_SETTING)
 	if has_setting:
