@@ -21,9 +21,12 @@ config/icon="res://icon.png"
 
 [autoload]
 
-SaveManager="*res://assets/scripts/managers/save_manager.gd"
-EventManager="*res://assets/scripts/managers/event_manager.gd"
-UIHolder="*res://assets/scripts/managers/ui_holder.gd"
+SaveManager="*res://addons/blueprint/managers/save_manager.gd"
+UIHolder="*res://addons/blueprint/managers/ui_holder.gd"
+
+[blueprint]
+
+save_manager/saves/save_encryption_key="save_encryption_key"
 
 [debug]
 
@@ -58,6 +61,10 @@ window/size/height=720
 [editor]
 
 script_templates_search_path="res://.script_templates"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/blueprint/plugin.cfg")
 
 [filesystem]
 

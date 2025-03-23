@@ -6,7 +6,7 @@
 		"**/.DS_Store",
 		"**.import",
 		"**/.godot",
-		"**/.import",
-		"addons/**"
+		"**/.import"
+		// "addons/**"
 	]
 }

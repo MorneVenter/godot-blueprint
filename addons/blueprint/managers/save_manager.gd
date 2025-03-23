@@ -1,6 +1,6 @@
 extends Node
 
-var _key := "save_encryption_key"
+var _key: String
 var _save_id: int = 1
 var _default_values: Dictionary = {_DATE_KEY: "-"}
 
@@ -13,6 +13,7 @@ const _DATE_KEY: String = "LAST_WRITE_DATE_TIME"
 
 
 func _init() -> void:
+	_key = ProjectSettings.get_setting(Blueprint.ENCRYPTION_KEY_SETTING)
 	_load_save_data()
 
 
