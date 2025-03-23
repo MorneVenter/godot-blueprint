@@ -20,7 +20,7 @@
 
 | Name  | Version |                     Link                     |
 | :---- | :------ | :------------------------------------------: |
-| Godot | 4.2.2   | [Download](https://godotengine.org/download) |
+| Godot | 4.4     | [Download](https://godotengine.org/download) |
 
 ### Reading
 
@@ -36,16 +36,15 @@ This project includes a few utility scripts. Feel free to delete them if they ar
 
 - PrettyNumbers - A static class used to format numbers.
 - SaveManager - A singleton save system.
-- EventManager- A singleton event system. You can then use this to emit and subscribe to global signals.
 
 ## UI Holder Pattern
 
 This project includes a top-level UI manager component: UIHolder. Simply use the `UIHolder.add` and `UIHolder.remove` to add and remove Control nodes.
 Note: removing a Control node frees it from the scene tree.
 
-When adding a Control node via the UIHolder, a UI layer is required. This can be found and changed at `global_enums.gd`. Control nodes will be ordered according to this enum, with higher values in the front.
+When adding a Control node via the UIHolder, a UI layer is required. This can be found and changed in `UIHolder`. Control nodes will be ordered according to this enum, with higher values in the front.
 
-Example: `UIHolder.add(ui, Enums.UILayers.WORLD)`.
+Example: `UIHolder.add(ui, UIHolder.UILayers.WORLD)`.
 
 ## Folder Structure
 
