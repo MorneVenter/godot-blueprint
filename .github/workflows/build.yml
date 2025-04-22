@@ -60,7 +60,7 @@ jobs:
       - name: Check linter results
         run: |
           cd godot
-          PROBLEMS=$(grep -oP 'Failure: \K\d+' gdlint_output.txt || echo "0")
+          PROBLEMS=$(grep -o 'Failure: \K\d+' gdlint_output.txt || echo "0")
           echo "Problems found: $PROBLEMS"
           echo "Threshold is: $PROBLEMS_THRESHOLD"
           if [ "$PROBLEMS" -gt "$PROBLEMS_THRESHOLD" ]; then
