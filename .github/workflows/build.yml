@@ -11,9 +11,6 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
 
-    env:
-      PROBLEMS_THRESHOLD: 0
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -35,10 +32,9 @@ jobs:
 
       - name: Check linter results
         run: |
-          PROBLEMS=$(grep -o 'Failure: \K\d+' gdlint_output.txt || echo "0")
-          echo "Problems found: $PROBLEMS"
-          echo "Threshold is: $PROBLEMS_THRESHOLD"
-          if [ "$PROBLEMS" -gt "$PROBLEMS_THRESHOLD" ]; then
-            echo "Quality check failed."
+          ERROR=$(grep -q "Failure:" glint_output.txt && echo true || echo false)
+          if [ "$ERROR" = true ]; then
+            echo "Lint check failed."
+            cat gdlint_output.txt
             exit 1
           fi
