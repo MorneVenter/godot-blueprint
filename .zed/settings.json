@@ -1,19 +1,19 @@
 {
-	"file_scan_exclusions": [
-		"**/.git",
-		"**/.DS_Store",
-		"**.import",
-		"**/.godot",
-		"**/.import",
-		"addons/**"
-	],
-	"languages": {
-		"gd": {
-			"tab_size": 4,
-			"hard_tabs": true
-		},
-		"JSON": {
-			"tab_size": 4
-		}
-	}
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.DS_Store",
+    "**.import",
+    "**/.godot",
+    "**/.import",
+    "addons/**"
+  ],
+  "languages": {
+    "GDScript": {
+      "tab_size": 4,
+      "hard_tabs": true
+    },
+    "JSON": {
+      "tab_size": 4
+    }
+  }
 }
