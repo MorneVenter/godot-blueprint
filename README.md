@@ -70,7 +70,7 @@ Example: `UIHolder.add(ui, UIHolder.UILayers.WORLD)`.
    |-- scripts
    |   |-- editor
    |   |-- entities
-   |   |-- managers
+   |   |-- autoloads
    |   |-- utilities
    |   |-- resources
    |   |-- other
@@ -98,7 +98,7 @@ Example: `UIHolder.add(ui, UIHolder.UILayers.WORLD)`.
 | scenes            | Store all scenes here.                                                                                                 |
 | scripts           | Store all scripts here.                                                                                                |
 | scripts/editor    | For Editor specific scripts.                                                                                           |
-| scripts/managers  | For singleton scripts used in Auto Loading.                                                                            |
+| scripts/autoloads  | For singleton scripts used in Auto Loading.                                                                            |
 | scripts/utilities | For utilty scripts used across the project.                                                                            |
 | scripts/resources | Instances of DataObjects or other Godot resources.                                                                     |
 | external-assets   | This is a reflection of the Assets folder, but meant for external assets you want to keep seperate from your project . |

@@ -21,8 +21,9 @@ config/icon="res://icon.png"
 
 [autoload]
 
-SaveManager="*res://addons/blueprint/managers/save_manager.gd"
-UIHolder="*res://addons/blueprint/managers/ui_holder.gd"
+SaveManager="*res://addons/blueprint/autoloads/save_manager.gd"
+UIHolder="*res://addons/blueprint/autoloads/ui_holder.gd"
+SignalBus="*res://assets/scripts/autoloads/signal_bus.gd"
 
 [blueprint]
 
