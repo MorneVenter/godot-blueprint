@@ -32,7 +32,7 @@ jobs:
 
       - name: Check linter results
         run: |
-          ERROR=$(grep -q "Failure:" glint_output.txt && echo true || echo false)
+          ERROR=$(grep -q "Failure:" gdlint_output.txt && echo true || echo false)
           if [ "$ERROR" = true ]; then
             echo "Lint check failed."
             cat gdlint_output.txt
