@@ -24,10 +24,12 @@ config/icon="res://icon.png"
 SaveManager="*res://addons/blueprint/autoloads/save_manager.gd"
 UIHolder="*res://addons/blueprint/autoloads/ui_holder.gd"
 SignalBus="*res://assets/scripts/autoloads/signal_bus.gd"
+FPSCounter="*res://addons/blueprint/autoloads/fps_counter.gd"
 
 [blueprint]
 
 save_manager/saves/save_encryption_key="save_encryption_key"
+debug/performance/show_fps_counter=true
 
 [debug]
 

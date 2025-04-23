@@ -46,6 +46,22 @@ When adding a Control node via the UIHolder, a UI layer is required. This can be
 
 Example: `UIHolder.add(ui, UIHolder.UILayers.WORLD)`.
 
+## Custom Settings
+This projects includes a few custom settings added in the Project Settings under the "Blueprint" section:
+
+- Save File Encryption Key: encryption key used to store save data.
+- Show FPS Counter: Toggle on to show an FPS counter. Can also be turned on/off in code via `FPSCounter.toggle(bool)`. This is on by default.
+
+## Utility Scripts
+This projects includes a few util scripts for linting and formatting. Run them by typing:
+- ./lint.sh
+- ./format.sh
+
+***Note**: GDScript Toolkit will need to be installed from [here](https://github.com/Scony/godot-gdscript-toolkit).*
+
+## GitHub Actions
+Included is a basic linting GitHub action located in `/.github/workflows/lint.yml`. This will automatically lint your code when pushed/PR'd into `main`.
+
 ## Folder Structure
 
 ```

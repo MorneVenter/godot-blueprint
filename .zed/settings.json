@@ -4,13 +4,13 @@
     "**/.DS_Store",
     "**.import",
     "**/.godot",
-    "**/.import",
-    "addons/**"
+    "**/.import"
   ],
   "languages": {
     "GDScript": {
       "tab_size": 4,
-      "hard_tabs": true
+      "hard_tabs": true,
+      "preferred_line_length": 100
     },
     "JSON": {
       "tab_size": 4

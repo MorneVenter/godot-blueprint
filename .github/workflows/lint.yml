@@ -27,7 +27,7 @@ jobs:
 
       - name: Lint code
         run: |
-          gdlint $(find . -name "*.gd" -not -path "./addons/*") > gdlint_output.txt 2>&1 || true
+          ./lint.sh > gdlint_output.txt 2>&1 || true
           cat gdlint_output.txt
 
       - name: Check linter results
