@@ -29,6 +29,7 @@ func _create_fps_label() -> void:
 	_label.size = Vector2(160, 32)
 	_label.position = Vector2(8, 8)
 	_label.text = "0 FPS"
+	_label.z_index = 99
 	add_child(_label)
 
 
