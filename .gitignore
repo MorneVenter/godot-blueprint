@@ -3,3 +3,6 @@
 .import/
 **/*.import
 .DS_Store
+
+# Tools
+.vscode
