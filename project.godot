@@ -48,6 +48,7 @@ gdscript/warnings/unsafe_property_access=2
 gdscript/warnings/unsafe_method_access=2
 gdscript/warnings/unsafe_cast=2
 gdscript/warnings/unsafe_call_argument=2
+gdscript/warnings/missing_await=1
 gdscript/warnings/treat_warnings_as_errors=true
 gdscript/warnings/unused_class_variable=true
 
@@ -57,9 +58,6 @@ window/size/viewport_width=1920
 window/size/viewport_height=1080
 window/size/initial_position_type=3
 window/stretch/mode="canvas_items"
-window/dpi/allow_hidpi=false
-window/size/width=1280
-window/size/height=720
 
 [editor]
 
@@ -69,13 +67,29 @@ script_templates_search_path="res://.script_templates"
 
 enabled=PackedStringArray("res://addons/blueprint/plugin.cfg")
 
+[file_customization]
+
+folder_colors={
+"res://assets/environments/": "orange",
+"res://assets/fonts/": "gray",
+"res://assets/materials/": "blue",
+"res://assets/media/": "teal",
+"res://assets/models/": "pink",
+"res://assets/scenes/": "red",
+"res://assets/scripts/": "yellow",
+"res://assets/shaders/": "green",
+"res://assets/sprites/": "purple"
+}
+
 [filesystem]
 
+import/fbx2gltf/enabled=false
 import/blender/enabled=false
 import/fbx/enabled=false
 
 [physics]
 
+3d/physics_engine="Jolt Physics"
 common/enable_pause_aware_picking=true
 
 [rendering]
