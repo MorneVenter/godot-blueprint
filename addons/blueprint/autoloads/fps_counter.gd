@@ -6,6 +6,7 @@ var _label: Label
 
 func _ready() -> void:
 	_enabled = ProjectSettings.get_setting(Blueprint.FPS_COUNTER_SETTING)
+	process_mode = Node.PROCESS_MODE_ALWAYS
 	if _enabled:
 		_create_fps_label()
 
@@ -30,6 +31,7 @@ func _create_fps_label() -> void:
 	_label.position = Vector2(8, 8)
 	_label.text = "0 FPS"
 	_label.z_index = 99
+	_label.process_mode = Node.PROCESS_MODE_ALWAYS
 	add_child(_label)
 
 
